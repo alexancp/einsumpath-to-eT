@@ -1,4 +1,4 @@
-from einsumpath_to_eT.blas_factory import *
+from blas_factory import *
 
 
 class TestIsBLASRoutine:
