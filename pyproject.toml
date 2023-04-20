@@ -1,0 +1,39 @@
+#[build-system]
+#requires = ["hatchling"]
+#build-backend = "hatchling.build"
+#
+[tool.pytest.ini_options]
+pythonpath = "einsumpath_to_eT"
+addopts = [
+    "--import-mode=importlib",
+]
+
+[project]
+name = "einsumpath_to_eT"
+version = "0.0.1"
+description = "Converts einsum strings to Fortran code that can be executed by the eT-program"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Alexander Paul", email = "alexander.chr.paul@gmail.com" },
+]
+keywords = ["einsum"]
+classifiers=[
+   # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
+   "Development Status :: 1 - Planning",
+   "Intended Audience :: Science/Research",
+   "License :: OSI Approved :: MIT License",
+   "Operating System :: Unix",
+   "Programming Language :: Python :: 3 :: Only",
+   "Programming Language :: Python :: 3.9",
+   "Programming Language :: Python :: 3.10",
+   "Programming Language :: Python :: 3.11",
+   "Programming Language :: Python :: 3.12",
+   "Topic :: Utilities",
+   "Typing :: Typed",
+]
+dependencies = [
+    "pytest",
+]
+
